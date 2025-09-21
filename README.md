@@ -33,7 +33,7 @@ The function must be defined to be invoked through the LLM interface.
 The LLM must be able to extract values for radius and height from the user’s query and pass them to the function
 
 ### PROGRAM:
-```
+```python
 import math
 import os
 from dotenv import load_dotenv, find_dotenv
@@ -94,6 +94,7 @@ height = float(input("Enter the height of the cylinder: "))
 prompt = f"What is the volume of a cylinder with a radius of {radius} and a height of {height}?"
 result = chat_with_openai(prompt)
 print("Result:", result)
+
 ```
 
 ### OUTPUT:
